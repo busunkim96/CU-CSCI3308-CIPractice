@@ -159,8 +159,7 @@ START_TEST(test_2d_area)
     c.x = 1;
     c.y = 0;
      
-    double exp = 0.5;
-    ck_assert(exp == coord_2d_area_triangle(&a, &b, &c));
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.5);
 
 
 }
